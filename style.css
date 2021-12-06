@@ -47,6 +47,12 @@ ul {
 	padding-left: 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 /* Typography */
 
@@ -113,4 +119,41 @@ p {
 .navbar__menu__item:hover {
 	background-color: var(--color-dark-grey);
 	
+}
+
+#home {
+  background: url('images/home_background.png') center/cover no-repeat;
+  padding: 80px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home__avatar {
+  width: 400px;
+  border: 2px solid var(--color-dark-white);
+  border-radius: 20px;
+  /* margin-left: 10vw; */
+}
+
+.home__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  margin: 24px 0px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  width: 150px;
 }
