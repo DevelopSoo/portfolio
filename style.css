@@ -156,8 +156,13 @@ p {
   /* text-align: center; */
   display: flex;
   justify-content: space-evenly;
-  
+  transition: all var(--animation-duration) ease-in-out;
+  opacity: 1;
 }
+
+/* #home.home__transparent {
+  opacity: 0;
+} */
 
 .home__avatar {
   width: 400px;
