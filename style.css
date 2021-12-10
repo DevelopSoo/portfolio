@@ -32,7 +32,7 @@
 	--size-border-radius: 4px;
 
   /* Animation */
-  --animation-duration: 300ms;
+  --animation-duration: 400ms;
 }
 
 body {
@@ -92,14 +92,27 @@ p {
 #navbar {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--color-black);
+	background-color: transparent;
+  position: fixed;
+  width: 100%;
+  /* background-color: transparent; */
+  /* z-index: 12; */
+  /* position: fixed; */
 	align-items: center;
 	color: var(--color-white);
 	padding: 8px;
+
+  transition: all var(--animation-duration) ease-in-out; 
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-black);
 }
 
 .navbar__menu {
 	display: flex;
+  padding: 0 16px;
+  
 }
 
 .navbar__logo {
@@ -139,9 +152,11 @@ p {
 #home {
   background: url('images/home_background.png') center/cover no-repeat;
   padding: 80px;
+  padding-top: 140px;
   /* text-align: center; */
   display: flex;
   justify-content: space-evenly;
+  
 }
 
 .home__avatar {
