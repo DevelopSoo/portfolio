@@ -36,6 +36,23 @@ document.addEventListener("scroll", () => {
 	home.style.opacity = 1 - window.scrollY / homeHeight
 })
 
+// scroll To the Top
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+	if (window.scrollY > homeHeight / 2) {
+		// arrowUp.style.display = "block";
+		arrowUp.classList.add("visible");
+	} else {
+		// arrowUp.style.display = "none";
+		arrowUp.classList.remove("visible");
+	}
+})
+
+arrowUp.addEventListener("click", () => {
+	// window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+	scrollIntoView("#home")
+})
+
 
 function scrollIntoView(selector) {
 	const scrollTo = document.querySelector(selector);
