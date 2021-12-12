@@ -1,0 +1,46 @@
+{
+	"projects": [
+		{
+			"field": "frontend",
+			"src": "images/projects/admin.png",
+			"alt": "Admin",
+			"title": "Admin Frontend",
+			"description": "Typescript, React, Cloud-Front, S3"
+		},
+		{
+			"field": "frontend",
+			"src": "images/projects/admin.png",
+			"alt": "Admin",
+			"title": "Admin Frontend",
+			"description": "Typescript, React, Cloud-Front, S3"
+		},
+		{
+			"field": "backend",
+			"src": "images/projects/MarketKurly.png",
+			"alt": "MarketKurly",
+			"title": "MarketKurly Clone",
+			"description": "Python, Django, AWS"
+		},
+		{
+			"field": "backend",
+			"src": "images/projects/MarketKurly.png",
+			"alt": "MarketKurly",
+			"title": "MarketKurly Clone",
+			"description": "Python, Django, AWS"
+		},
+		{
+			"field": "backend",
+			"src": "images/projects/whatThePedia.png",
+			"alt": "WhatThePedia",
+			"title": "WatchaPedia Clone",
+			"description": "Python, Django, AWS"
+		},
+		{
+			"field": "backend",
+			"src": "images/projects/whatThePedia.png",
+			"alt": "WhatThePedia",
+			"title": "WatchaPedia Clone",
+			"description": "Python, Django, AWS"
+		}
+	]
+}

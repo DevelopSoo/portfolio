@@ -379,6 +379,10 @@ p {
   align-items: center;
 }
 
+.project.invisible { 
+  display: none;
+}
+
 .project__img {
   max-width: 280px;
   max-height: 250px;
