@@ -19,6 +19,13 @@ navbarMenu.addEventListener("click", (e) => {
 	if (!link) {
 		return;
 	}
+	// // Navbar active
+	// const navList = Array.from(navbarMenu.children);
+	
+	// navList.forEach((li) => {
+	// 	li.classList.remove("active")
+	// })
+	// target.classList.add("active");
 	scrollIntoView(link);
 })
 
@@ -64,8 +71,15 @@ workBtnContainer.addEventListener("click", (e) => {
 		return;
 	}
 
+	// remove selection 
+	const active = document.querySelector(".category__btn.selected");
+	console.log(active)
+	active.classList.remove("selected");
+
+	const target = e.target.nodeName === "BUTTON" 
+		? e.target : e.target.parentNode;
+	target.classList.add("selected")
 	projectContainer.classList.add("animation-out");
-	
 	setTimeout(() => {
 		projects.forEach((project) => {
 			if (filter === "*" || filter === project.dataset.type) {
@@ -74,11 +88,10 @@ workBtnContainer.addEventListener("click", (e) => {
 				project.classList.add("invisible");
 			}
 		})
+
 		projectContainer.classList.remove("animation-out");
 	}, 300)
-	
 })
-
 
 
 function scrollIntoView(selector) {
