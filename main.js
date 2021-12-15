@@ -26,6 +26,7 @@ navbarMenu.addEventListener("click", (e) => {
 	// 	li.classList.remove("active")
 	// })
 	// target.classList.add("active");
+	navbarMenu.classList.remove("open")
 	scrollIntoView(link);
 })
 
@@ -91,6 +92,21 @@ workBtnContainer.addEventListener("click", (e) => {
 
 		projectContainer.classList.remove("animation-out");
 	}, 300)
+})
+
+
+// Navbar toggle
+// const navbarMenu = document.querySelector(".navbar__menu");
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+	navbarMenu.classList.toggle("open");
+	// if (navbarMenu.style.display === "none") {
+	// 	navbarMenu.style.display = "block";
+	// 	navbarMenu.style.backgroundColor = "black";
+	// } else {
+	// 	navbarMenu.style.display = "none"
+	// }
+	
 })
 
 
